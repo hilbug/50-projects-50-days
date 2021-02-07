@@ -5,13 +5,18 @@ const path = require("path");
 const express = require("express");
 const htmlRouter = express.Router();
 
+// route to Homepage
+htmlRouter.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+});
+
 // route to day 1
-htmlRouter.get("/exercise", (req, res) => {
+htmlRouter.get("/day1", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/day1.html"));
 });
 
 // route to day 2
-htmlRouter.get("/stats", (req, res) => {
+htmlRouter.get("/day2", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/day2.html"));
 });
 
