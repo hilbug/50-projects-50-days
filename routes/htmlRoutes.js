@@ -12,12 +12,12 @@ htmlRouter.get("/", (req, res) => {
 
 // route to day 1
 htmlRouter.get("/day1", (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/day1.html"));
+    res.sendFile(path.join(__dirname, "../public/day1/day1.html"));
 });
 
 // route to day 2
 htmlRouter.get("/day2", (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/day2.html"));
+    res.sendFile(path.join(__dirname, "../public/day2/day2.html"));
 });
 
 // If no matching route is found default to index
