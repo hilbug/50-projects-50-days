@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+/* uncomment bg color if needed so it is not inherited from .body */
+/* body {
+    background-color: lightblue;
+}
+*/
+
+.body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column; 
