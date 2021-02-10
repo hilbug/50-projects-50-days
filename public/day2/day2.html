@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- font awesome - can also do cdnjs.com -->
     <script src="https://kit.fontawesome.com/32bf735cb4.js" crossorigin="anonymous"></script>
-    <title>My Project</title>
+    <title>Progress Steps</title>
 </head>
 
 <body>
@@ -19,7 +19,18 @@
         <h1>50 Projects in 50 Days</h1>
     </header>
     <main class="body">
+        <div class="container">
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+            </div>
 
+            <button class="btn" id="prev" disabled>Prev</button>
+            <button class="btn" id="next">Next</button>
+        </div>
     </main>
     <footer class="footer">
         <a href="https://icons8.com/icon/71354/50">50 icon by Icons8</a>
