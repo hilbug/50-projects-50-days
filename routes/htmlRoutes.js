@@ -10,6 +10,11 @@ htmlRouter.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
+// route to bug log
+htmlRouter.get("/buglog", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/buglog.html"));
+});
+
 // route to day 1
 htmlRouter.get("/day1", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/day1/day1.html"));
@@ -23,6 +28,11 @@ htmlRouter.get("/day2", (req, res) => {
 // route to day 3
 htmlRouter.get("/day3", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/day3/day3.html"));
+});
+
+// route to day 4
+htmlRouter.get("/day4", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/day4/day4.html"));
 });
 
 // If no matching route is found default to index
