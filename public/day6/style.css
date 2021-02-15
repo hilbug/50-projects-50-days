@@ -5,10 +5,11 @@
 }
 
 /* uncomment bg color if needed so it is not inherited from .body */
-/* body {
-    background-color: lightblue;
+body {
+    background-color: #efedd6;
+    overflow-x: hidden;
 }
-*/
+
 
 .body {
     font-family: 'Roboto', sans-serif;
@@ -16,7 +17,42 @@
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    /* height: 100vh;
+    overflow: hidden; */
     margin: 0;
 }
+
+h1 {
+    margin: 10px;
+}
+
+.box {
+    background-color: steelblue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(200%);
+    /* transform: translateX(400%); */
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    /* every other box */
+    transform: translateX(-200%);
+    /* transform: translateX(-400%); */
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 45px;
+}
+
