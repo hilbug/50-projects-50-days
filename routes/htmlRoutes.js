@@ -55,6 +55,11 @@ htmlRouter.get("/day8", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/day8/day8.html"));
 });
 
+// route to day 9
+htmlRouter.get("/day9", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/day9/day9.html"));
+});
+
 // If no matching route is found default to index
 htmlRouter.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"));
