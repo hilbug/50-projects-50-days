@@ -20,7 +20,7 @@ movies.forEach(movie => {
     btn.innerText = movie.btntext;
 
     btn.addEventListener('click', () => {
-        stopSongs();
+        stopSounds();
 
         document.getElementById(movie.id).play();
     });
@@ -28,7 +28,7 @@ movies.forEach(movie => {
     document.getElementById('buttons').appendChild(btn);
 });
 
-function stopSongs() {
+function stopSounds() {
     movies.forEach(movie => {
         const sound = document.getElementById(movie.id);
         sound.pause();
